@@ -6,4 +6,9 @@
 #include <string>
 #include <cmath>
 
+namespace pixofil
+{
+    double logit(const double& probability);
+}
+
 #endif

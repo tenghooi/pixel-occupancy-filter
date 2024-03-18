@@ -26,7 +26,6 @@ namespace pixofil
     {
         log_odds_ = log_odds_val;
     }
-
     
 
 } // namespace pixofil

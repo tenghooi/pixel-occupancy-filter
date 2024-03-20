@@ -7,7 +7,7 @@ namespace pixofil
 
     Pixel::~Pixel() { }
 
-    bool Pixel::get_occupancy()
+    bool Pixel::get_occupancy() const
     {
         return occupancy_;
     }
@@ -17,7 +17,7 @@ namespace pixofil
         occupancy_ = occupancy_val;
     }
     
-    double Pixel::get_log_odds()
+    double Pixel::get_log_odds() const 
     {
         return log_odds_;
     }

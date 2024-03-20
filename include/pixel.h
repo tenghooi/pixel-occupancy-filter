@@ -21,10 +21,10 @@ namespace pixofil
         Pixel(bool occupancy = false, double log_odds = 0.0);
         ~Pixel();
 
-        bool get_occupancy();
+        bool get_occupancy() const;
         void set_occupancy(bool occupancy_val);
 
-        double get_log_odds();
+        double get_log_odds() const;
         void set_log_odds(double log_odds_val);
 
     };

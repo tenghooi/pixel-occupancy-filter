@@ -6,9 +6,11 @@
 #include <string>
 #include <cmath>
 
+#include "pixel.h"
 namespace pixofil
 {
     double logit(const double& probability);
+    void log_odds_update(Pixel& pixel, double new_log_odds);
 }
 
 #endif

@@ -27,8 +27,12 @@ int main(int argc, char** argv)
     std::cout << "Pixel log odds:" << pix.get_log_odds() << std::endl;
     std::cout << "Pixel occupancy: " << pix.get_occupancy() << std::endl;
 
-    pix.set_log_odds(0.3);
-    pix.set_occupancy(true);
+    double prob {0.75};
+    double logit_p {pixofil::logit(prob)};
+    std::cout << "posterior log odds:" << logit_p << std::endl;
+
+    pixofil::log_odds_update(pix, logit_p);
+
     std::cout << "Pixel new log odds:" << pix.get_log_odds() << std::endl;
     std::cout << "Pixel occupancy: " << pix.get_occupancy() << std::endl;
 

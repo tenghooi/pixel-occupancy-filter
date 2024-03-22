@@ -5,6 +5,9 @@ namespace pixofil
     Pixel::Pixel(bool occupancy, double log_odds) 
         : occupancy_ {occupancy}, log_odds_ {log_odds} { }
 
+    Pixel::Pixel(const Pixel& pix)
+        : Pixel {pix.occupancy_, pix.log_odds_} { }
+
     Pixel::~Pixel() { }
 
     bool Pixel::get_occupancy() const

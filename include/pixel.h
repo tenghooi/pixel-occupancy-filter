@@ -19,6 +19,7 @@ namespace pixofil
     public:
 
         Pixel(bool occupancy = false, double log_odds = 0.0);
+        Pixel(const Pixel& pix);
         ~Pixel();
 
         bool get_occupancy() const;
